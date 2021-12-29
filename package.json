@@ -2,8 +2,9 @@
   "name": "sass-timer-test",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
+    "start": "npm run sass && npm run node-sass",
     "sass": "rm -rf dist-dart && sass ./node_modules/bootstrap/scss/bootstrap.scss dist-dart/bs.css | gnomon",
     "node-sass": "rm -rf dist-node && node-sass ./node_modules/bootstrap/scss/bootstrap.scss dist-node/bs.css | gnomon"
   },
